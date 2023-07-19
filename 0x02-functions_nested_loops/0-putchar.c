@@ -1,10 +1,21 @@
-#include<stdio.h>
+#include<unistd.h>
+#include<string.h>
 /**
  * main - entry of program
  *
  * Return: resturns 0 upon success
- */int main(void)
+ */
+int  _putchar(char c)
 {
-	puts("_putchar");
-	return (0);
+	return write(1,&c,1);
+}
+int main(void)
+{
+    char tr[] = "_putchar";
+    for(int i = 0;i<=strlen(tr);i++)
+    {
+	    _putchar(tr[i]);
+    }
+    _putchar('\n');
+    return (0);
 }
