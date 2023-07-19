@@ -8,13 +8,16 @@
  */
 int main(void)
 {
-    char tr[] = "_putchar";
-    size_t i;
-    size_t length = strlen(tr);
-    for(i = 0;i<length;i++)
-    {
+	char tr[] = "_putchar";
+	size_t i;
+	size_t length = strlen(tr);
+
+
+	for (i = 0; i < length; i++)
+	{
 	    _putchar(tr[i]);
-    }
-    _putchar('\n');
-    return (0);
+	}
+
+	_putchar('\n');
+	return (0);
 }
