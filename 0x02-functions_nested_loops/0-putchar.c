@@ -11,7 +11,7 @@ int main(void)
     char tr[] = "_putchar";
     size_t i;
     size_t length = strlen(tr);
-    for(i = 0;i<=length;i++)
+    for(i = 0;i<length;i++)
     {
 	    _putchar(tr[i]);
     }
