@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include "main.h"
+#include "alpha10.h"
 /**
  * main - entry of program
  * Return: 0 upon success
