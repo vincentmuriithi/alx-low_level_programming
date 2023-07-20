@@ -1,4 +1,3 @@
-#include "alpha.h"
 #include<stdio.h>
 /**
  * print_alphabet - prints letters from a to z
