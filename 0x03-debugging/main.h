@@ -3,5 +3,5 @@
 
 #include<stdio.h>
 
-void positive_or_negative(int g); 
+void positive_or_negative(int g);
 #endif
