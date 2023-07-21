@@ -18,6 +18,6 @@ int positive_or_negative(int n)
 	}
 	else
 	{
-		printf("0 is zero\n");
+		printf("%d is zero\n", n);
 	}
 }
