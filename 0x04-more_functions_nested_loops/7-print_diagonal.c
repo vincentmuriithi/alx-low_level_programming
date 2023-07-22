@@ -8,14 +8,16 @@ void print_diagonal(int n)
 {
 	int k, j;
 
+	if (n <= 0)
+	{
+		_putchar('\n');
+		return;
+	}
+
 	for (k = 0; k <= n; k++)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
 
-		for (j = 0;j <= k;j++)
+		for (j = 0; j <= k; j++)
 		{
 			_putchar(' ');
 		}
