@@ -7,10 +7,11 @@
  */
 void print_times_table(int n)
 {
+	int row, col, result;
+
 	if (n < 0 || n > 15) /* Check if n is outside the valid range */
 		return;
 
-	int row, col, result;
 
 	for (row = 0; row <= n; row++)
 	{
