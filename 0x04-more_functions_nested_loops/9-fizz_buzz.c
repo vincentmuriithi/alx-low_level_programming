@@ -9,19 +9,19 @@ int main(void)
 
 	for (k = 1; k <= 100; k++)
 	{
-		if (k == 3 || k % 3 == 0)
+		if (k % 5 == 0 && k % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("FizzBuzz ");
 			continue;
 		}
-		if (k == 5 || k % 5 == 0)
+		else if (k == 5 || k % 5 == 0)
 		{
 			printf("Buzz ");
 			continue;
 		}
-		if (k % 5 == 0 && k % 3 == 0)
+		else if (k % 3 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("Fizz ");
 			continue;
 		}
 
