@@ -24,8 +24,11 @@ int main(void)
 			printf("Fizz ");
 			continue;
 		}
+		else 
+		{
 
-		printf("%d ", k);
+		     printf("%d ", k);
+		}
 	}
 
 	printf("\n");
