@@ -12,19 +12,22 @@ int main(void)
 		if (k % 5 == 0 && k % 3 == 0)
 		{
 			printf("FizzBuzz ");
-			
+			continue;
+
 		}
 		else if (k == 5 || k % 5 == 0)
 		{
 			printf("Buzz ");
-		
+			continue;
+
 		}
 		else if (k % 3 == 0)
 		{
 			printf("Fizz ");
-			
+			continue;
+
 		}
-		
+
 		printf("%d ", k);
 	}
 
