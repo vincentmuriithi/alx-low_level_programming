@@ -11,18 +11,21 @@ int main(void)
 	{
 		if (k == 3 || k % 3 == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
+			continue;
 		}
 		if (k == 5 || k % 5 == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
+			continue;
 		}
 		if (k % 5 == 0 && k % 3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
+			continue;
 		}
 
-		printf("%d", k);
+		printf("%d ", k);
 	}
 
 	printf("\n");
