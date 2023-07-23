@@ -3,17 +3,17 @@
 /**
  * main - Entry point
  *
- * Description: Prints all single-digit numbers of base 10 starting from 0.
+ * Description: Prints the lowercase alphabet in reverse
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int digit;
+	char letter;
 
-	for (digit = 48; digit <= 57; digit++)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
-		putchar(digit);
+		putchar(letter);
 	}
 
 	putchar('\n');
