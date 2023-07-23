@@ -7,9 +7,9 @@ void times_table(void)
 {
 	int k, i, result;
 
-	for (k = 0; k < 10; k++)
+	for (k = 0; k <= 9; k++)
 	{
-		for (i = 0; i < 10; i++)
+		for (i = 0; i <= 9; i++)
 		{
 			result = k * i;
 			if (i == 0)
@@ -20,5 +20,7 @@ void times_table(void)
 
 		printf("\n");
 	}
+
+	return;
 
 }
