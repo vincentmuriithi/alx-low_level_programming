@@ -6,12 +6,19 @@
  */
 void print_number(int n)
 {
-	int num = n;
+	unsigned int num;
+	unsigned int temp;
 	int power;
-	int temp;
 
-	power = 1;
-	temp = num;
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -n;
+	}
+	else
+	{
+		num = n;
+	}
 
 	if (num == 0)
 	{
@@ -19,12 +26,8 @@ void print_number(int n)
 		return;
 	}
 
-	if (num < 0)
-	{
-		_putchar('-');
-		num = -num;
-	}
-
+	power = 1;
+	temp = num;
 
 	while (temp > 9)
 	{
