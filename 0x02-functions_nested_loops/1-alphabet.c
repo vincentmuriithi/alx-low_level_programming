@@ -1,11 +1,15 @@
-#include<stdio.h>
-#include "alpha.h"
+#include "main.h"
 /**
- *main - entry of the program
- *Return: 0 upon success
- */
-int main(void)
+* print_alphabet - prints letters from a to z
+*/
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+char letter;
+
+for (letter = 'a'; letter <= 'z'; letter++)
+{
+_putchar(letter);
+}
+
+_putchar('\n');
 }
