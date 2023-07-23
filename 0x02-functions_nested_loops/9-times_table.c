@@ -14,7 +14,7 @@ void times_table(void)
 			result = k * i;
 			if (i == 0)
 				printf("%2d", result);
-			else if (i > 0)
+			else
 				printf(", %2d", result);
 		}
 
