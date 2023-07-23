@@ -24,10 +24,8 @@ int main(void)
 			printf("Fizz ");
 			
 		}
-		else 
-		{
-			printf("%d ", k);
-		}
+		
+		printf("%d ", k);
 	}
 
 	printf("\n");
