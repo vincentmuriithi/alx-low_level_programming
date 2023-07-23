@@ -1,0 +1,3 @@
+#!/bin/bash
+#use this script with a global variable.that is $file should be defined using the export command
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $file
