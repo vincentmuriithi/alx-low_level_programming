@@ -4,7 +4,7 @@
  * @s: input
  * Return: returns void
  */
-void rev_string(*s)
+void rev_string(char *s)
 {
 	int k, i, j;
 
