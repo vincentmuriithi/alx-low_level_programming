@@ -14,6 +14,7 @@ int main(void)
 	srand(time(NULL));
 
 	int i;
+
 	char password[PASSWORD_LENGTH + 1];
 
 	for (i = 0; i < PASSWORD_LENGTH; i++) {
