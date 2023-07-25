@@ -9,10 +9,13 @@ char generateRandomChar() {
 }
 
 int main(void) {
+	int i;
+
 	srand(time(NULL));
 
 	char password[PASSWORD_LENGTH + 1];
-	int i;
+
+
 
 	for (i = 0; i < PASSWORD_LENGTH; i++) {
 		password[i] = generateRandomChar();
