@@ -14,6 +14,8 @@ if (i < n  && i > 0)
 {
 printf(", %d", a[i]);
 }
+else
+printf("%d", a[i]);
 
 }
 
