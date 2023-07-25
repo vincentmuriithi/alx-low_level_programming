@@ -19,7 +19,7 @@ void puts_half(char *str)
 	i = k - 1;
 	n = (k - 1) / 2;
 
-	while (str  > 0)
+	while (str  > '0')
 	{
 		if (half % 2 == 0)
 		{
