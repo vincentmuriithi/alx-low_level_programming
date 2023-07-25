@@ -12,11 +12,11 @@ void puts2(char *str)
 	{
 		if (length % 2 == 0)
 		{
-			_putchar(str[length]0;
-					}
+			_putchar(str[length]);
+		}
 
-					length++;
-					}
+		length++;
+	}
 
-					_putchar('\n');
-					}
+	_putchar('\n');
+}
