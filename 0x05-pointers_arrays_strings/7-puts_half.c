@@ -1,41 +1,22 @@
 #include "main.h"
+
 /**
- * puts_half - printas the 2nd half of string if its even
- * @str: input pointer
- * Return: returns void
- */
+* puts_half - Prints the second half of a string, followed by a new line.
+* @str: The input string.
+*/
 void puts_half(char *str)
 {
-	int k, i, half, n;
+int length = 0;
 
-	k = 0;
+int i;
 
-	while (*str != '\0')
-	{
-		k++;
-	}
+while (str[length] != '\0')
+length++;
 
-	half = k / 2;
-	i = k - 1;
-	n = (k - 1) / 2;
+int start_index = length % 2 == 0 ? length / 2 : (length + 1) / 2;
 
-	while (str  > '0')
-	{
-		if (half % 2 == 0)
-		{
-			_putchar(*(str + i));
-		}
-		else
-		{
-			if (i < n)
-			{
-				_putchar(*(str + i));
-			}
-		}
+for (i = start_index; str[i] != '\0'; i++)
+_putchar(str[i]);
 
-		i++;
-
-	}
-
-	_putchar('\n');
+_putchar('\n');
 }
