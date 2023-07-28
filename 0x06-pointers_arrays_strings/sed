@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i 's/^[ \t]*//' $msg && sed -i 's/[ \t]*$//' $msg
