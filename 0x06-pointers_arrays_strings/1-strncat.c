@@ -10,7 +10,7 @@ char *_strcnt(char *dest, char *src, int n)
 {
 	int i, j, k;
 
-	while (dest[i])
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
