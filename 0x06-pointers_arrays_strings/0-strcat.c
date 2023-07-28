@@ -9,11 +9,9 @@ char *_strcat(char *dest, char *src)
 {
 	char *ptr = dest;
 
-	// Move the pointer to the end of the destination string
 	while (*ptr)
 		ptr++;
 
-	// Append the source string to the destination string
 	while (*src)
 	{
 		*ptr = *src;
@@ -21,8 +19,7 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	// Add a terminating null byte to the concatenated string
 	*ptr = '\0';
 
-	return dest;
+	return (dest);
 }
