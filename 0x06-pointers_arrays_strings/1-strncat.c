@@ -8,7 +8,9 @@
  */
 char *_strcnt(char *dest, char *src, int n)
 {
-	int i, j, k;
+	int i, k;
+
+	i = 0;
 
 	while (dest[i] != '\0')
 	{
