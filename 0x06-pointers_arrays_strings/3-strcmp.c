@@ -3,7 +3,6 @@
  * _strcmp - compares two strings
  * @dest: input pointer
  * @src: input pointer
- * @n: input
  * Return: returns pointer
  */
 int _strcmp(char *dest, char *src)
