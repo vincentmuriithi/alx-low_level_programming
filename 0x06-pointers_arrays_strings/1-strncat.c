@@ -19,7 +19,7 @@ char *_strcnt(char *dest, char *src, int n)
 
 	k = 0;
 
-	while (k < n && src[k])
+	while (k < n && src[k] != '\0')
 	{
 		dest[i] = src[k];
 		i++;
