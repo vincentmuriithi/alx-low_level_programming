@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - entry of program
+ * Return: returns 0 upon successs
+ */
 
 int main(void)
 {
