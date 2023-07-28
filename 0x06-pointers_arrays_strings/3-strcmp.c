@@ -6,7 +6,7 @@
  * @n: input
  * Return: returns pointer
  */
-int _strcmp(char *dest, char *src, int n)
+int _strcmp(char *dest, char *src)
 {
 	int i;
 
