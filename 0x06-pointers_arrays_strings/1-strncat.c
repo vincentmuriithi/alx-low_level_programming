@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _strcnt - concatenates two strings with a limitation of n bytes
+ * _strncat - concatenates two strings with a limitation of n bytes
  * @dest: input poointer(destination)
  * @src: input pointer source
  * @n: input integer(number of bytes)
  * Return: returns the new concatenated string as a pointer
  */
-char *_strcnt(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, k;
 
