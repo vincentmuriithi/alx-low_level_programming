@@ -18,10 +18,16 @@ for (k = 0; k < n; k++)
 {
 if (*(s + i) == *(accept + k))
 {
-return ((s + i));
+	break;
 }
 
 }
 }
+
+if (*(s + i) == *(accept + k))
+{
+	return (s + i);
+}
+else
 return (0);
 }
