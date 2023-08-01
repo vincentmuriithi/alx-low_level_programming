@@ -7,15 +7,18 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int i, k;
+unsigned int i, k, j, n;
 
-for (i = 0; i < (sizeof(*s) - 1); i++)
+j = (sizeof(*s) - 1);
+n = (sizeof(*accept) - 1);
+
+for (i = 0; i < j; i++)
 {
-for (k = 0; k < (sizeof(*accept) - 1); k++;)
+for (k = 0; k < n; k++)
 {
 if (*(s + i) == *(accept + k))
 {
-return (*(s + i));
+return ((s + i));
 }
 
 }
