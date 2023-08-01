@@ -18,7 +18,7 @@ for (k = 0; k < n; k++)
 {
 if (*(s + i) == *(accept + k))
 {
-	break;
+break;
 }
 
 }
@@ -26,7 +26,7 @@ if (*(s + i) == *(accept + k))
 
 if (*(s + i) == *(accept + k))
 {
-	return (s + i);
+return ((s + i));
 }
 else
 return (0);
