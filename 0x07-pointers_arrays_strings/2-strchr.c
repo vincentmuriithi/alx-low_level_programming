@@ -22,7 +22,7 @@ i++;
 
 if (*(s + i) != c)
 {
-	return (NULL);
+	return (0);
 }
 else
 return (s + i);
