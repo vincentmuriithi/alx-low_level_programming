@@ -20,5 +20,10 @@ i++;
 
 }
 
+if (*(s + i) != c)
+{
+	return (NULL);
+}
+else
 return (s + i);
 }
