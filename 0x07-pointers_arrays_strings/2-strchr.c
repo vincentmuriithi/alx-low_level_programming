@@ -25,5 +25,5 @@ if (*(s + i) != c)
 	return (0);
 }
 else
-return (s + i);
+return (s);
 }
