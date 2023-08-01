@@ -13,11 +13,7 @@ while (*s != '\0' && s[i] != c)
 {
 if (s[i] == c)
 {
-	break;
-}
-else
-{
-return (NULL);
+break;
 }
 
 }
