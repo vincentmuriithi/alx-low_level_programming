@@ -10,9 +10,9 @@ int k = 0;
 
 if (*s == '\0')
 {
-return;
+return (0);
 }
 
 k++;
-return  (k + _strlen_recursion(*s + k));
+return  (k + _strlen_recursion(s + k));
 }
