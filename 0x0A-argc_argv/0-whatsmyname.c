@@ -5,7 +5,7 @@
 * @argv: value of commandline arguments
 * Return: returns 0 upon success
 */
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 printf("%s", argv[0]);
 
