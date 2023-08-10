@@ -18,6 +18,11 @@ return (ptr);
 
 ptr = (char *)malloc(size * sizeof(char));
 
+if (ptr == NULL)
+{
+	return (ptr);
+}
+
 for (i = 0; i < size; i++)
 {
 ptr[i] = c;
