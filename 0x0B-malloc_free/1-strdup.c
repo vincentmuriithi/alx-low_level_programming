@@ -3,7 +3,7 @@
 * _strdup - returns a pointer to a newly allocated space
 * Return: returns pointer upon success
 */
-char *_stdup(char *str)
+char *_strdup(char *str)
 {
 char *duplicate;
 unsigned int length = 0, i;
