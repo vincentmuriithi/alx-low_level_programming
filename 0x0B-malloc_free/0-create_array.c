@@ -1,17 +1,20 @@
 #include "main.h"
 /**
- * main - entry of program
+ * create_array - entry of program
  * @size: input
  * @c: input
- * Return: returns 0 upon success
+ * Return: returns a non null pointer upon success
  */
-char **create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-	int i;
+	unsigned int i;
 
 	if (size == 0)
+	{
+		ptr = NULL;
 		return (ptr);
+	}
 
 	ptr = (char*)malloc(size * sizeof(char));
 
