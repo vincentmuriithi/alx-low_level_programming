@@ -26,7 +26,7 @@ length++;
 length++;
 }
 
-concatenated = (char *)malloc(length * sizeof(char));
+concatenated = (char *)malloc((length + 1) * sizeof(char));
 
 pos = 0;
 
