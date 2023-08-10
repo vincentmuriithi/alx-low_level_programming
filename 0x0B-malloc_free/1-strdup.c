@@ -1,11 +1,13 @@
 #include "main.h"
 /**
 * _strdup - returns a pointer to a newly allocated space
+* @str: input
 * Return: returns pointer upon success
 */
 char *_strdup(char *str)
 {
 char *duplicate;
+
 unsigned int length = 0, i;
 
 if (str == NULL)
