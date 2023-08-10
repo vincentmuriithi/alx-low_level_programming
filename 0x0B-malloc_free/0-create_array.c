@@ -16,7 +16,7 @@ ptr = NULL;
 return (ptr);
 }
 
-ptr = (char*)malloc(size * sizeof(char));
+ptr = (char *)malloc(size * sizeof(char));
 
 for (i = 0; i < size; i++)
 {
