@@ -4,6 +4,7 @@
 * @s1: input pointer
 * @s2: input pointer
 * @n: input
+* Return: returns a pointer upon success
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -30,15 +31,6 @@ for (i = 0; s1[i] != '\0'; i++)
 ptr[i] = s1[i];
 }
 
-if (n >= k)
-{
-while (s2[j] != '\0')
-{
-ptr[i] = s2[j];
-j++;
-i++;
-}
-}
 
 while (j <= n)
 {
