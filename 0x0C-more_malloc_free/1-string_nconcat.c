@@ -34,11 +34,10 @@ ptr[i] = s1[i];
 
 while (j <= n)
 {
-ptr[i] = s2[j];
+ptr[i + j] = s2[j];
 j++;
-i++;
 }
-ptr[i] = '\0';
+ptr[i + j] = '\0';
 
 return (ptr);
 }
