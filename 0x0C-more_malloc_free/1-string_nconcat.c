@@ -32,7 +32,7 @@ ptr[i] = s1[i];
 }
 
 
-while (j <= n)
+while (j <= n || n >= k)
 {
 ptr[i + j] = s2[j];
 j++;
