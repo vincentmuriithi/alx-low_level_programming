@@ -21,11 +21,13 @@ i++;
 while (s2[k] != '\0')
 k++;
 
- if (n == NULL)
+ if (s2 == NULL)
    {
      s2 = "";
-     n = 0;
+     
    }
+ if (s1 == NULL)
+   s1 = "";
 ptr = (char *)malloc(sizeof(char) * (i + n + 1));
 
 if (ptr == NULL)
