@@ -17,7 +17,7 @@ ptr = malloc(nmemb * size);
 
 for (i = 0; i < nmemb * size; i++)
 {
-(char *)ptr[i] = 0;
+((char *)ptr)[i] = 0;
 }
 
 
