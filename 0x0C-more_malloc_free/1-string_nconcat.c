@@ -32,7 +32,7 @@ s1 = "";
 
 if (n >= k)
 n = k;
-ptr = (char *)malloc(sizeof(char) * (i + n + 1));
+ptr = (char *)malloc(sizeof(char) * (len1 + n + 1));
 
 if (ptr == NULL)
 return (NULL);
