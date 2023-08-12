@@ -28,6 +28,9 @@ s2 = "";
 }
 if (s1 == NULL)
 s1 = "";
+
+if (n >= k)
+n = k;
 ptr = (char *)malloc(sizeof(char) * (i + n + 1));
 
 if (ptr == NULL)
@@ -39,7 +42,7 @@ ptr[i] = s1[i];
 }
 
 
-while (j <= n || n >= k)
+while (j <= n)
 {
 ptr[i + j] = s2[j];
 j++;
