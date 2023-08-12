@@ -11,7 +11,7 @@ void  *ptr;
 unsigned int i;
 
 if (nmemb == 0 || size == 0)
-ptr = NULL;
+return (NULL);
 
 ptr = malloc(nmemb * size);
 
