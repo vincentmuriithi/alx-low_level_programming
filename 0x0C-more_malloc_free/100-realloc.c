@@ -35,5 +35,6 @@ memcpy(nptr, ptr, old_size);
 else
 memcpy(nptr, ptr, new_size);
 
+free(ptr);
 return (nptr);
 }
