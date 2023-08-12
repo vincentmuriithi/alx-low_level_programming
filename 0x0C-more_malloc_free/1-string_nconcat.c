@@ -48,7 +48,7 @@ while (j <= n)
 ptr[len1 + j] = s2[j];
 j++;
 }
-ptr[i + j] = '\0';
+ptr[len1 + n] = '\0';
 
 return (ptr);
 }
