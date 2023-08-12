@@ -38,7 +38,7 @@ ptr[i] = s1[i];
 }
 
 
-while (j <= n)
+while (j < n)
 {
 ptr[len1 + j] = s2[j];
 j++;
