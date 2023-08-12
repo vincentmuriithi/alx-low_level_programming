@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * array_range -  creates an array of integers.
+ * @min: input
+ * @max: input
+ * Return: returns a pointer upon success
+ */
+int *array_range(int min, int max)
+{
+}
