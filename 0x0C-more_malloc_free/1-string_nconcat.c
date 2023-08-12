@@ -8,15 +8,16 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j, k;
+unsigned int i, j, k, len1;
 char *ptr;
 
 i = 0;
 j = 0;
 k = 0;
+len1 = 0;
 
-while (*(s1 + i) != '\0')
-i++;
+while (*(s1 + len1) != '\0')
+len1++;
 
 while (s2[k] != '\0')
 k++;
@@ -44,7 +45,7 @@ ptr[i] = s1[i];
 
 while (j <= n)
 {
-ptr[i + j] = s2[j];
+ptr[len1 + j] = s2[j];
 j++;
 }
 ptr[i + j] = '\0';
