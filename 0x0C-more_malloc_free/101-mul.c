@@ -46,7 +46,8 @@ putchar(c);
 */
 int main(int argc, char *argv[])
 {
-int len1, len2, i, j, carry, result, *res;
+int len1, len2, i, j, carry, result;
+int *res;
 
 if (argc != 3)
 {
@@ -65,6 +66,7 @@ printf("Error\n");
 return (98);
 }
 }
+
 for (i = 0; i < len2; i++)
 {
 if (!_isdigit(argv[2][i]))
@@ -81,6 +83,7 @@ if (res == NULL)
 printf("Error\n");
 return (98);
 }
+
 for (i = len1 - 1; i >= 0; i--)
 {
 carry = 0;
@@ -92,15 +95,18 @@ res[i + j + 1] = result % 10;
 }
 res[i + j + 1] += carry;
 }
+
 i = 0;
 while (res[i] == 0 && i < len1 + len2 - 1)
 i++;
+
 while (i < len1 + len2)
 {
 _putchar(res[i] + '0');
 i++;
 }
 _putchar('\n');
+
 free(res);
 return (0);
 }
