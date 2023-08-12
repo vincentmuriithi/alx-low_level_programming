@@ -23,7 +23,7 @@ return (nptr);
 }
 if (new_size == 0 && ptr != NULL)
 {
-nptr = free(ptr);
+free(ptr);
 return (NULL);
 }
 
