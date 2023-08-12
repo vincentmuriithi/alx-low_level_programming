@@ -22,10 +22,18 @@ return (nptr);
 if (new_size == 0 && ptr != NULL)
 return (NULL);
 
+
 nptr = realloc(ptr, new_size);
 
 if (nptr == NULL)
 return (NULL);
+
+if (new_size > old_size)
+{
+memcpy(nptr, ptr, old_size);
+}
+else
+memcpy(nptr, ptr, new_size);
 
 return (nptr);
 }
