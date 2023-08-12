@@ -1,0 +1,31 @@
+#include "main.h"
+/**
+* _realloc -  reallocates a memory block using malloc and free
+* @ptr: input pointer
+* @old_size: input
+* @new_size: input
+* Return: returns a valid pointer upon success
+*/
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+
+void *nptr;
+
+if (new_size == old_size)
+return (ptr);
+
+if (ptr == NULL)
+{
+nptr = malloc(new_size);
+return (nptr);
+}
+if (new_size == 0 && ptr != NULL)
+return (NULL);
+
+nptr = realloc(ptr, new_size);
+
+if (nptr == NULL)
+return (NULL);
+
+return (nptr);
+}
