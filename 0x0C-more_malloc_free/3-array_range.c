@@ -20,7 +20,7 @@ ptr = (int *)malloc(sizeof(int) * ((max - min) + 1));
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i < size)
+ for (i = 0; i < size; i++)
 *(ptr + i) = min + i;
 return (ptr);
 }
