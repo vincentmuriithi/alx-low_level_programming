@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-0;276;0c* _calloc -  allocates memory for an array, using malloc
+* _calloc -  allocates memory for an array, using malloc
 * @nmemb: input
 * @size: input
 * Return: returns a pointer upon success
