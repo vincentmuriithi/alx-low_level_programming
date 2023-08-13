@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -36,6 +35,25 @@ return (len);
 void _putchar(char c)
 {
 putchar(c);
+}
+
+/**
+* print_result - prints the result with leading zeros removed
+* @res: the array containing the result
+* @len: the length of the result array
+*/
+void print_result(int *res, int len)
+{
+int i = 0;
+while (res[i] == 0 && i < len - 1)
+i++;
+
+while (i < len)
+{
+_putchar(res[i] + '0');
+i++;
+}
+_putchar('\n');
 }
 
 /**
@@ -78,7 +96,6 @@ return (98);
 }
 
 res = calloc(len1 + len2, sizeof(int));
-
 if (res == NULL)
 {
 printf("Error\n");
@@ -97,16 +114,7 @@ res[i + j + 1] = result % 10;
 res[i + j + 1] += carry;
 }
 
-i = 0;
-while (res[i] == 0 && i < len1 + len2 - 1)
-i++;
-
-while (i < len1 + len2)
-{
-_putchar(res[i] + '0');
-i++;
-}
-_putchar('\n');
+print_result(res, len1 + len2);
 
 free(res);
 return (0);
