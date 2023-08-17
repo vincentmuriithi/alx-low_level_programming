@@ -20,6 +20,7 @@ for (i = 0; i < size; i++)
 num = cmp(array[i]);
 if (num > 0)
 ans = i;
+break;
 else
 ans = (-1);
 }
