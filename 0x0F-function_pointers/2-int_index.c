@@ -8,7 +8,7 @@
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int i,num,ans;
+int i, num, ans;
 
 if (array == NULL || cmp == NULL)
 return (-1);
@@ -21,7 +21,7 @@ num = cmp(array[i]);
 if (num > 0)
 ans = i;
 else
-ans = -1;
+ans = (-1);
 }
 
 return (ans);
