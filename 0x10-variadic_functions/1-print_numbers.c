@@ -15,6 +15,10 @@ return;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
+if ( separator == NULL)
+{
+printf("%d", va_arg(args, int));
+}
 printf("%d", va_arg(args, int));
 printf("%s", separator);
 }
