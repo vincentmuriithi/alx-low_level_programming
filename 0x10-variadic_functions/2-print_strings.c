@@ -11,8 +11,7 @@ va_list args;
 unsigned int i;
 char *string;
 
-if (n == 0)
-return;
+
 
 va_start(args, n);
 
