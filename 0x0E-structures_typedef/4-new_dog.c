@@ -10,7 +10,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog_ptr;
- int name_len, owner_len, i;
+int name_len, owner_len, i;
 
 /* Calculate lengths of name and owner strings */
 for (name_len = 0; name[name_len] != '\0'; name_len++)
