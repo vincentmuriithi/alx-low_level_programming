@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "dog.h"
 /**
 * new_dog - sets a dog type
@@ -9,7 +10,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog_ptr;
-int name_len, owner_len;
+ int name_len, owner_len, i;
 
 /* Calculate lengths of name and owner strings */
 for (name_len = 0; name[name_len] != '\0'; name_len++)
@@ -39,9 +40,9 @@ return (NULL);
 }
 
 /* Copy name and owner strings */
-for (int i = 0; i <= name_len; i++)
+for (i = 0; i <= name_len; i++)
 new_dog_ptr->name[i] = name[i];
-for (int i = 0; i <= owner_len; i++)
+for (i = 0; i <= owner_len; i++)
 new_dog_ptr->owner[i] = owner[i];
 
 new_dog_ptr->age = age;
