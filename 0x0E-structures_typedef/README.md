@@ -1,0 +1,1 @@
+This directory contains structures in C projects and tasks
