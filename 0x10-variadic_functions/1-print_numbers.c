@@ -20,6 +20,7 @@ if (separator != NULL)
 printf("%d", va_arg(args, int));
 printf("%s", separator);
 }
+else
 printf("%d", va_arg(args, int));
 }
 printf("\n");
