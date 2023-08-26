@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
 * list_len - computes  the number of elements in a list
 * @h: input list
@@ -13,5 +13,5 @@ while (h != NULL)
 h->next;
 i++;
 }
-return (i)
+return (i);
 }
