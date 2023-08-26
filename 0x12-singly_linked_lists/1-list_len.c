@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
 * list_len - computes  the number of elements in a list
 * @h: input list
