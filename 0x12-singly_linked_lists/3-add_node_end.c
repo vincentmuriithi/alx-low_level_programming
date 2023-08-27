@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <string.h>
 #include "lists.h"
 /**
@@ -37,7 +36,7 @@ return (new);
 }
 
 temp = *head;
-while (temp != NULL)
+while (temp->next != NULL)
 {
 temp = temp->next;
 }
