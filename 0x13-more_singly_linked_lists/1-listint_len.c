@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 * listint_len - calculates the number of nodes in a list
 * @h: input link
