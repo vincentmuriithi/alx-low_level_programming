@@ -1,5 +1,6 @@
 #include "lists.h"
-/** pop_listint - deletes the head node and returns it's data(n)
+/**
+* pop_listint - deletes the head node and returns it's data(n)
 * @head: input pointer to list
 * Return: returns int data type
 *
@@ -14,9 +15,9 @@ return (0);
 
 num = (*head)->n;
 
-temp = (*head)->next;
-free(*head);
-*head = temp;
+temp = *head;
+*head = temp->next;
+free(temp);
 
 return (num);
 
