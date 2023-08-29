@@ -19,8 +19,8 @@ temp = (listint_t *)h;
 while (temp != NULL)
 {
 printf("%d\n", temp->n);
-num ++;
 temp = temp->next;
+num++;
 }
 
 return (num);
