@@ -15,7 +15,7 @@ return (NULL);
 
 temp = head;
 
-while (temp->next && k <= index)
+while (temp && k < index)
 {
 temp = temp->next;
 k++;
