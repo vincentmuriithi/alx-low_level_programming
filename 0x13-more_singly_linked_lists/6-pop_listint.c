@@ -14,9 +14,9 @@ return (0);
 
 num = (*head)->n;
 
-temp = *head;
-*head = temp->next;
-free(temp);
+temp = (*head)->next;
+free(*head);
+*head = temp;
 
 return (num);
 
