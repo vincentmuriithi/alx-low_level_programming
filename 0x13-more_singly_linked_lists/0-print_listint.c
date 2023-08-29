@@ -11,7 +11,7 @@ size_t num = 0;
 listint_t *temp;
 
 if (h == NULL)
-return (1);
+return (-1);
 
 
 temp = (listint_t *)h;
