@@ -12,7 +12,7 @@ int num;
 if (head == NULL)
 return (0);
 
-num = *head->n;
+num = (*head)->n;
 
 temp = *head;
 *head = temp->next;
