@@ -15,6 +15,8 @@ unsigned int i;
 if (head == NULL)
 return (NULL);
 
+temp = *head;
+
 new = malloc(sizeof(listint_t));
 
 if (new == NULL)
