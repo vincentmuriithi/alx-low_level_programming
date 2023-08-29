@@ -26,11 +26,11 @@ if (*head == NULL)
 *head = new;
 return (new);
 }
-while (temp != NULL)
+while (temp->next)
 {
 temp = temp->next;
 }
 
-temp = new;
+temp->next = new;
 return (new);
 }
