@@ -18,13 +18,19 @@ new =  (listint_t *)malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 
+new->n = n;
+new->next = NULL;
+
+if (*head == NULL)
+{
+*head = new;
+return (new);
+}
 while (temp != NULL)
 {
 temp = temp->next;
 }
 
-new->n = n;
-new->next = NULL;
 temp = new;
 return (new);
 }
