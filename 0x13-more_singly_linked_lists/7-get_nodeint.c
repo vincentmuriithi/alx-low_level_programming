@@ -13,7 +13,7 @@ unsigned int k = 0;
 if (head == NULL)
 return (NULL);
 
-while (temp->next && k <= index)
+while (temp->next && k < index)
 {
 temp = temp->next;
 k++;
