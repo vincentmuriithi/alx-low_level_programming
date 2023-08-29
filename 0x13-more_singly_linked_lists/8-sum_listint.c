@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
-* sum_listint -
+* sum_listint - calculates the sum of all the nodes data
 * @head: input list
-* Return: returns
+* Return: returns the sum of all the nodes datas
 */
 int sum_listint(listint_t *head)
 {
