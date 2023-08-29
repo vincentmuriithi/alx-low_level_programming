@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
 * print_listint - prints the elements in a list
 * @h: input list
@@ -13,12 +14,11 @@ if (h == NULL)
 return (0);
 
 
-temp = h;
+temp = (listint_t *)h;
 
 while (temp != NULL)
 {
-printf(temp->n);
-printf("\n");
+printf("%d\n", temp->n);
 num ++;
 temp = temp->next;
 }
