@@ -11,7 +11,8 @@ unsigned long int xor_result = n ^ m;
 
 unsigned int count = 0;
 
-while (xor_result) {
+while (xor_result) 
+{
 count += xor_result & 1;
 xor_result >>= 1;
 }
