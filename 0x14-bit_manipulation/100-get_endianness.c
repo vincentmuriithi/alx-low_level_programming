@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* get_enianness - calculates the endianness of a computer system
+* get_endianness - calculates the endianness of a computer system
 * Return: returns void
 *
 */
