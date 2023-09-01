@@ -7,7 +7,7 @@
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned ling int mask;
+unsigned long int mask;
 int bitValue;
 unsigned int numBits = sizeof(unsigned long int) * 8;
 
