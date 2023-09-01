@@ -12,7 +12,7 @@ unsigned int bit_num;
 
 bit_num = sizeof(unsigned long int) * 8;
 
-if (bit_num >= index)
+if (index >= bit_num)
 return (-1);
 
 mask = ~(1UL << index);
