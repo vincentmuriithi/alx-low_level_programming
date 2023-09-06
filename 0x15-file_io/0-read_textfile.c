@@ -33,7 +33,7 @@ free(buffer);
 close(fp);
 return (0);
 }
-written_bytes = write(fp, buffer, read_bytes);
+written_bytes = write(STDOUT_FILENO, buffer, read_bytes);
 if (written_bytes != read_bytes || written_bytes == -1)
 {
 free(buffer);
