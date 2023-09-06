@@ -1,35 +1,41 @@
-#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <fcntl.h>
-#include "main.h"
+#include <unistd.h>
+
 /**
-* create_file - creates a new file
-* @filename: input pointer to file
-* @text_content: input
-* Return: returns
+* create_file - Creates a file with the specified permissions .
+* @filename: The name of the file to create.
+* @text_content: A NULL-terminated string to write to the file (can be NULL).
+* Return: 1 on success, -1 on failure.
 */
 int create_file(const char *filename, char *text_content)
 {
-int fd, written_bytes;
+int fd, write_result, len;
 
 if (filename == NULL)
-return (0);
-fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC);
+return (-1);
+
+fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 if (fd == -1)
-return (0);
+return (-1);
 
-if (text_content == NULL)
+if (text_content != NULL)
+{
+for (len = 0; text_content[len]; len++)
+;
+
+write_result = write(fd, text_content, len);
+
+if (write_result == -1)
 {
 close(fd);
-return (0);
+return (-1);
+}
 }
 
-written_bytes = write(fd, text_content, strlen(text_content));
-if (written_bytes == -1)
-{
 close(fd);
-return(0);
-}
-close(fd);
-return (written_bytes);
+
+return (1);
 }
