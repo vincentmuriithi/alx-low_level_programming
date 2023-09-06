@@ -1,10 +1,10 @@
 #include "main.h"
 #include <fcntl.h>
 /**
-* read_textfile -
+* read_textfile - prints the given number of bytes from a file
 * @filename: input
 * @letters: input
-* Return: returns
+* Return: returns number of written bytes
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -33,16 +33,8 @@ free(buffer);
 close(fp);
 return (0);
 }
-
 written_bytes = write(fp, buffer, read_bytes);
-if (written_bytes == -1)
-{
-free(buffer);
-close(fp);
-return (0);
-}
-
-if (written_bytes != read_bytes || written_bytes < read_bytes)
+if (written_bytes != read_bytes || written_bytes == -1)
 {
 free(buffer);
 close(fp);
