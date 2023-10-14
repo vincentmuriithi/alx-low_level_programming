@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
-*
-*
-*
+* print_dlistint - print the elements of a list
+* @h: the input pointer
+* Return: returns the namba of elements
 */
 size_t print_dlistint(const dlistint_t *h)
 {
