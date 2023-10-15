@@ -16,7 +16,7 @@ return (NULL);
 while (tmp && i < index)
 {
 tmp = tmp->next;
-i++
+i++;
 }
 
 return (tmp);
