@@ -34,8 +34,9 @@ if (!new)
 	return (NULL);
 
 new->next = tmp->next;
-tmp->next->prev = new;
 new->prev = tmp;
+if (tmp->next)
+                tmp->next->prev = new;
 tmp->next = new;
 new->n = n;
 	}
