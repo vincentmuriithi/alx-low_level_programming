@@ -3,7 +3,7 @@
 #include "hash_tables.h"
 
 /**
-* key_index - Returns the index at which the key/value pair should be stored in the array of the hash table.
+* key_index - Returns the index at which the key/value pair should be stored
 * @key: The key to be used for hashing.
 * @size: The size of the array of the hash table.
 *
