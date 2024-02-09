@@ -20,17 +20,20 @@ return (-1);
 
 while (current < (size - 1) && array[current] < value)
 {
-printf("Comparing element at index %d\n",(int)current);
+printf("Value checked array[%d] = [%d]",(int)current, array[current]);
 prev = current;
 current += jump_step;
 }
 
 for (i = prev; i <= fmin(current, size - 1); i++)
 {
-printf("Comparing element at index %d\n",(int)i);
+printf("Value checked array[%d] = [%d]",(int)i, (int)i);
 
 if (array[i] == value)
-return (i);
+{
+	printf("Found %d at index: %d", array[i],(int)i);
+	return (i);
+}
 }
 
 return (-1);
